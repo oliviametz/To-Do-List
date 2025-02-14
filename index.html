@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do-List</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tektur&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <main>
+        <div class="width-100">
+            <h1>2do-List</h1>
+            <div id="search-container">
+                <input autofocus id="input-field" type="text" placeholder="Add an item" maxlength="30">
+                <button id="submit-button">Submit</button>
+                <button id="clear-button">Clear list</button>
+            </div>
+            <br>
+            <div id="list-container">
+                <ul id="list"></ul>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p id="change-color">Change Colors</p>
+        <button id="blue">Blue</button>
+        <button id="yellow">Yellow</button>
+        <button id="green">Green</button>
+        <button id="purple">Purple</button>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

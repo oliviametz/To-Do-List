@@ -99,8 +99,7 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
-    margin-top: 2em;
-    padding: 0 3px;
+    margin: 2em 3px 0 3px;
     text-align: center;
     background-color: rgba(67, 66, 66, 0.2);
     align-items: center;

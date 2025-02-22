@@ -1,0 +1,197 @@
+body,
+html {
+    height: 100dvh;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-size: 10px;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+
+* {
+    font-family: 'Tektur', sans-serif;
+}
+
+
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding-bottom: 53px;
+}
+
+
+
+h1 {
+    text-align: center;
+    margin: 0 0 15px 0;
+    padding: 0;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+#search-container {
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 2px;
+    text-align: center;
+}
+
+#input-field {
+    margin-bottom: 7px;
+}
+
+
+#input-field:focus {
+    outline: none;
+    border: 1px solid #757575;
+    border-radius: 3px;
+    padding: 2px 3px;
+}
+
+.delete-button {
+    border: transparent;
+    background: transparent;
+    padding: 1px 0 0 7px;
+    font-size: 12px;
+}
+
+.done-button {
+    width: 58px;
+    padding: 0px;
+    margin-left: 3px;
+    font-size: 12px;
+}
+
+
+
+#list-container {
+    width: 90%;
+    height: 380px;
+    margin: 0 auto;
+    border: 1px solid black;
+    background: linear-gradient(rgb(248, 204, 72), rgb(239, 239, 189));
+    font-size: 12px;
+}
+
+#list {
+    padding: 0 10px;
+}
+
+li {
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.width-100 {
+    width: 100%;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin-top: 2em;
+    text-align: center;
+    background-color: rgba(67, 66, 66, 0.2);
+    align-items: center;
+    font-size: 16px;
+}
+
+
+footer * {
+    display: inline-block;
+}
+
+
+#change-color {
+    margin-right: 5px;
+}
+
+
+
+/* Max-width Media Query */
+
+@media (max-width: 520px) {
+
+    #list-container {
+        margin-top: 10px;
+    }
+
+}
+
+
+
+/* Min-width Media Queries */
+
+@media (min-width: 520px) {
+
+    #list-container {
+        width: 85%;
+    }
+
+}
+
+
+@media (min-width: 576px) {
+    #search-container {
+        width: 50%;
+
+    }
+
+    .done-button,
+    .delete-button,
+    li {
+        font-size: 14px;
+    }
+
+    #list-container {
+        height: 420px;
+    }
+
+}
+
+@media (min-width: 620px) {
+
+    #list-container {
+        width: 80%;
+    }
+
+}
+
+
+
+@media (min-width: 668px) {
+    #list-container {
+        width: 78%;
+    }
+
+    #list {
+        padding: 0 20px;
+    }
+
+    .delete-button {
+        margin-left: 7px;
+    }
+}
+
+@media (min-width: 768px) {
+    #list-container {
+        width: 520px;
+    }
+
+    #list {
+        padding: 0 20px;
+    }
+}
